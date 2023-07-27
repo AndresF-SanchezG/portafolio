@@ -115,13 +115,13 @@ a {
     font-size: 30px;
     line-height: 35px;
     
-    
 }
 
 .profil-main-container h2 {
     color:var(--bitcoin-orange);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     margin-top: 20px;
+    font-size: 42px;
     
 }
 
