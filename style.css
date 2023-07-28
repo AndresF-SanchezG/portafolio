@@ -259,11 +259,19 @@ a {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-items: center;
-      
-       
-        
-
+        gap:50px
     }
+
+    .profile-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+    }
+
+
+
 
     .div-text-container {
         width:360px
@@ -271,7 +279,8 @@ a {
 
     .profil-main-container img {
         width: 360px;
-        height: 340px;
+        height: 360px;
+        
       
     }
 
@@ -281,8 +290,8 @@ a {
 
     .profil-main-container p {
         width:350;
-        font-size: 15px;
-        line-height: 18px;
+        font-size: 18px;
+        line-height: 24px;
     }
 
 }
