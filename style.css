@@ -225,14 +225,6 @@ a {
 
     .main-button  {
     
-        display: inline-block;
-        width: 13px;
-        height: 8px;
-        margin-left: 10px;
-        background-image: url('./assets/img/abajo.svg');
-    
-       
-        
     }
 
     .main-button {
@@ -257,22 +249,9 @@ a {
       text-align: center;
     }
 
-    .main-button2 {
-        position: absolute;
-        display: flex;
-        bottom: -25px;
-        width:190px;
-        height: 60px;
-        font-size: 25px;
-        font-weight: bold;
-        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-        left: calc(50% - 102px);
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        color:var(--bitcoin-orange);
-        background-color: #FAF8F7;   
-    }
+  
+
+ 
 }
 
   @media (min-width: 901px) {

@@ -1,54 +1,61 @@
 let divContainerText1 = document.getElementById('div-text-container-1');
 let divContainerText2 = document.getElementById('div-text-container-2');
+let mainButton1 = document.getElementById('main-button1')
+let readMore = document.getElementById('readMore-container')
 let divReadMore = null;
-let divMyprojects = null;
-
-function createMyProjectsButton() {
-  if (!divMyprojects) {
-    divMyprojects = document.createElement('div');
-    divMyprojects.textContent = 'My projects';
-    divMyprojects.classList.add('main-button2');
-    divContainerText1.appendChild(divMyprojects); // Cambiamos insertAdjacentElement('afterend') por appendChild
-  }
-}
-
-function removeMyProjectsButton() {
-  if (divMyprojects) {
-    divMyprojects.remove();
-    divMyprojects = null;
-  }
-}
-
+         
 function toggleDivContainerText2() {
   if (window.innerWidth <= 900) {
     divContainerText2.style.display = 'none';
 
-    createMyProjectsButton();
-
     if (!divReadMore) {
-      divReadMore = document.createElement("div");
-      let wordReadMore = document.createElement('p');
-      wordReadMore.textContent = 'Read More...';
-      divReadMore.appendChild(wordReadMore);
-      divContainerText1.appendChild(divReadMore); // Cambiamos insertAdjacentElement('afterend') por appendChild
+        divReadMore = document.createElement("div");
+        let wordReadMore = document.createElement('p');
+        wordReadMore.textContent = 'Read More...';
+        divReadMore.appendChild(wordReadMore);
+        divContainerText1.appendChild(divReadMore); 
+        wordReadMore.setAttribute('id', 'readMore-container')
+        wordReadMore.addEventListener('click', ()=> {
+        divContainerText2.style.display = 'block';
+        divReadMore.remove();
+        createReadLess();
+        
+    })
+    
     }
   } else {
     divContainerText2.style.display = 'block';
-
-    removeMyProjectsButton();
 
     if (divReadMore) {
       divReadMore.remove();
       divReadMore = null;
     }
-  }
-}
 
+  
+
+   
+  }
+
+}
+function createReadLess() {
+    let divReadLess = document.createElement('div');
+    let wordReadLess = document.createElement('p');
+    wordReadLess.textContent = 'Read Less';
+    divReadLess.appendChild(wordReadLess);
+    divContainerText2.appendChild(divReadLess);
+   
+}
 document.addEventListener('DOMContentLoaded', function () {
   toggleDivContainerText2();
+  
 });
 
 window.addEventListener('resize', function () {
   toggleDivContainerText2();
+  
+  
+ 
 });
+
+
 
