@@ -161,7 +161,7 @@ a {
     
 }
 
-.main-button {
+.main-button  {
     position: absolute;
     display: flex;
     bottom: -25px;
@@ -181,6 +181,8 @@ a {
 
 
 
+
+
 @media (min-width: 320px) {
 
     .profile-container {
@@ -196,6 +198,12 @@ a {
   }
 
 @media (max-width: 900px) {
+
+    .nav-section {
+        justify-content: center;
+    }
+   
+
     .profil-main-container {
         position:absolute;
         display: flex;
@@ -215,7 +223,7 @@ a {
       
     }
 
-    .main-button .span {
+    .main-button  {
     
         display: inline-block;
         width: 13px;
@@ -234,6 +242,7 @@ a {
         bottom: -26px;
     }
 
+
     .profil-main-container img {
       max-width: 100%;
       height: auto;
@@ -246,6 +255,23 @@ a {
     
     .profil-main-container .profile-container {
       text-align: center;
+    }
+
+    .main-button2 {
+        position: absolute;
+        display: flex;
+        bottom: -25px;
+        width:190px;
+        height: 60px;
+        font-size: 25px;
+        font-weight: bold;
+        box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+        left: calc(50% - 102px);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        color:var(--bitcoin-orange);
+        background-color: #FAF8F7;   
     }
 }
 
