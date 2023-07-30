@@ -7,23 +7,39 @@ let divReadMore = null;
 let divReadLess = null;
 let wordReadLess;
 
-createReadMore(); 
-  
-         
 function toggleDivContainerText2() {
-    
-  
-    if (window.innerWidth <= 900) {
+    if(window.innerWidth <= 900) {
+        createReadMore();
+        
         divContainerText2.style.display = 'none';
         divReadMore.style.display = 'block';
-       
-          
+        if (divReadLess) {
+            divReadLess.remove();
+            divReadLess=null;
+        }
+        
     } else {
         divContainerText2.style.display = 'block';
-        divReadMore.style.display = 'none';
-      
-    }      
+       
+        if (divReadLess) {
+            divReadMore.style.display = 'none'
+        }
+        
+    }
+
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  toggleDivContainerText2();
+  
+});
+
+window.addEventListener('resize', function () {
+  toggleDivContainerText2();
+});
+
+
+
 
 function createReadMore() {
     
@@ -34,19 +50,21 @@ function createReadMore() {
         divReadMore.appendChild(wordReadMore);
         divContainerText1.appendChild(divReadMore); 
         wordReadMore.setAttribute('id', 'readMore-container');
-       
-        wordReadMore.addEventListener('click', ()=> {
-            divContainerText2.style.display = 'block';
-            divReadMore.style.display = 'none'
-            createReadLess(); 
-        })
-    }
-
-    if (divReadLess) {
-        divReadLess.remove();
-    }
+        clickReadMore();
+        createReadLess();
+        
+      
+    }  
+    
 }
 
+function clickReadMore() {
+    divReadMore.addEventListener('click', ()=> {
+        divContainerText2.style.display = 'block';
+        divReadMore.style.display = 'none';
+    })
+
+}
 
 function createReadLess() {
     let divReadLess = document.createElement('div');
@@ -56,25 +74,97 @@ function createReadLess() {
     divContainerText2.appendChild(divReadLess);
     wordReadLess.setAttribute('id', 'readLess-container');
 
-
-    wordReadLess.addEventListener('click', ()=>{
+    wordReadLess.addEventListener('click', ()=> {
         divContainerText2.style.display = 'none';
         divReadMore.style.display = 'block';
-        divReadLess.style.display = 'none';
        
-         
     })
+ 
+    clickReadMore();
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-  toggleDivContainerText2();
+
+
+
   
-});
 
 
-window.addEventListener('resize', function () {
-  toggleDivContainerText2();
-});
+
+
+
+         
+// function toggleDivContainerText2() {
+    
+//     createReadMore(); 
+//     if (window.innerWidth <= 900) {
+//         divContainerText2.style.display = 'none';
+//         divReadMore.style.display = 'block';
+     
+       
+       
+          
+//     } else {
+//         divContainerText2.style.display = 'block';
+//         divReadMore.style.display = 'none';
+//         if (divReadLess) {
+//             divReadLess.remove();
+//             divReadLess=null;
+//         }
+//     }  
+    
+  
+// }
+
+// function createReadMore() {
+    
+//     if(!divReadMore) {
+//         divReadMore = document.createElement("div");
+//         let wordReadMore = document.createElement('p');
+//         wordReadMore.textContent = 'Read More...';
+//         divReadMore.appendChild(wordReadMore);
+//         divContainerText1.appendChild(divReadMore); 
+//         wordReadMore.setAttribute('id', 'readMore-container');
+
+      
+       
+//         wordReadMore.addEventListener('click', ()=> {
+//             divContainerText2.style.display = 'block';
+//             divReadMore.style.display = 'none'
+//             createReadLess(); 
+//         })
+//     }
+
+//     if (divReadLess) {
+//         divReadLess.remove();
+//         divReadLess=null;
+//     }
+
+  
+// }
+
+
+// function createReadLess() {
+//     
+
+//     wordReadLess.addEventListener('click', ()=>{
+//         divContainerText2.style.display = 'none';
+//         divReadMore.style.display = 'block';
+//         divReadLess.style.display = 'none';
+     
+         
+//     })
+
+// }
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   toggleDivContainerText2();
+  
+// });
+
+
+// window.addEventListener('resize', function () {
+//   toggleDivContainerText2();
+// });
 
 
 
