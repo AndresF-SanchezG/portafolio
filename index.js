@@ -7,11 +7,18 @@ let divReadMore = null;
 let divReadLess = null;
          
 function toggleDivContainerText2() {
+    if(divReadMore) {
+        divReadMore.remove();
+        divReadMore = null;
+    }
+
+    if(divReadLess) {
+        divReadLess.remove();
+        divReadLess = null;
+    }
     if (window.innerWidth <= 900) {
         divContainerText2.style.display = 'none';
-        createReadMore()
-      
-      
+        createReadMore();
     }
     
     if(window.innerWidth >= 901) {
@@ -30,26 +37,15 @@ function createReadMore() {
         divReadMore.appendChild(wordReadMore);
         divContainerText1.appendChild(divReadMore); 
         wordReadMore.setAttribute('id', 'readMore-container');
-  
-        if(window.innerWidth >= 901) {
-            if(wordReadMore) {
-                wordReadMore.remove();
-                wordReadMore = null;
-            }
-        }    
-    
+       
         wordReadMore.addEventListener('click', ()=> {
             divContainerText2.style.display = 'block';
-            if(divReadMore) {
-                divReadMore.remove();
-                divReadMore = null;
-            }
+            divReadMore.remove();
+
             createReadLess()
             
         })
-
     }
-
 }
 
 function createReadLess() {
@@ -66,6 +62,12 @@ function createReadLess() {
             divReadLess.remove();
             divReadLess = null;
         }
+
+        if(divReadMore) {
+            divReadMore.remove();
+            divReadMore = null;
+        }
+
         createReadMore();  
     })
 }
