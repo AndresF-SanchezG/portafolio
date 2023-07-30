@@ -7,24 +7,15 @@ let divReadMore = null;
 let divReadLess = null;
          
 function toggleDivContainerText2() {
-    if(divReadMore) {
-        divReadMore.remove();
-        divReadMore = null;
-    }
-
-    if(divReadLess) {
-        divReadLess.remove();
-        divReadLess = null;
-    }
+   
+  
     if (window.innerWidth <= 900) {
         divContainerText2.style.display = 'none';
-        createReadMore();
+        createReadMore();   
     }
     
     if(window.innerWidth >= 901) {
         divContainerText2.style.display = 'block';
-        divReadMore = null;
-        divReadLess = null;  
     }      
 }
 
@@ -40,10 +31,8 @@ function createReadMore() {
        
         wordReadMore.addEventListener('click', ()=> {
             divContainerText2.style.display = 'block';
-            divReadMore.remove();
-
-            createReadLess()
-            
+            divReadMore.style.display = 'none'
+            createReadLess(); 
         })
     }
 }
@@ -58,29 +47,22 @@ function createReadLess() {
 
     wordReadLess.addEventListener('click', ()=>{
         divContainerText2.style.display = 'none';
+        divReadMore.style.display = 'block'
         if(divReadLess) {
             divReadLess.remove();
             divReadLess = null;
         }
-
-        if(divReadMore) {
-            divReadMore.remove();
-            divReadMore = null;
-        }
-
-        createReadMore();  
+         
     })
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   toggleDivContainerText2();
-
 });
 
 
 window.addEventListener('resize', function () {
   toggleDivContainerText2();
-  
 });
 
 
