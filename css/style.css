@@ -44,14 +44,14 @@ header {
 }
 
 .nav-right-section {
-    width:260px;
+    width:280px;
     height:auto;
     display: flex;
     justify-items: flex-end;
     align-items: center;
     justify-content: space-between;
     margin-right: 30px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bolder;
 }
 
@@ -154,11 +154,7 @@ a {
     align-items: center;
     left: calc(50% - 102px);  
     justify-content: center;
-    top:-30px;
-   
-
-
-    
+    top:-30px;   
 }
 
 .main-button  {
@@ -178,128 +174,6 @@ a {
     background-color: #FAF8F7;   
 }
 
-@media (min-width: 320px) {
-
-    .profile-container {
-        display: flex;
-        flex-direction: column;
-    }
-    
-
-    .profil-main-container p {
-      font-size: calc(15px + 17.5 * ((100vw - 320px) / 448)); /* Cálculo gradual del tamaño de fuente */
-      line-height: calc(18px + 25 * ((100vw - 320px) / 448)); /* Cálculo gradual de la altura de línea */
-    }
-  }
-
-@media (max-width: 900px) {
-
-    .nav-section {
-        justify-content: center;
-    }
-   
-
-    .profil-main-container {
-        position:absolute;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .profil-main-container h2 {
-        font-size: 28px;
-        width:210px;
-        height:60px
-    }
-    .div-aboutme-conteiner {
-        top:-35px;
-        height: 100px;
-      
-    }
-
-
-    .main-button {
-        font-size: 28px;
-        width:210px;
-        height: 60px;
-        bottom: -26px;
-    }
-
-
-    .profil-main-container img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-      margin-top: 25px;
-    
-    
-    }
-
-    
-    .profil-main-container .profile-container {
-      text-align: center;
-    }
-
-    #readMore-container  {
-        color: var(--bitcoin-orange);
-    }
-
-    #readLess-container {
-        color: var(--bitcoin-orange);
-    }
-
-  
-
- 
-}
-
-  @media (min-width: 901px) {
-    /* Existing styles for screens larger than 901px */
-    
-
-    .grid-container {
-        display: grid;
-        width:787px;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-        gap:50px
-    }
-
-    .profile-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        margin-top: 25px;
-    }
-
-
-
-
-    .div-text-container {
-        width:360px
-    }
-
-    .profil-main-container img {
-        width: 360px;
-        height: 360px;
-        
-      
-    }
-
-    .profil-main-container h2 {
-        margin-top: 0;
-    }
-
-    .profil-main-container p {
-        width:350;
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-}
 
 
 
