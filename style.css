@@ -178,11 +178,6 @@ a {
     background-color: #FAF8F7;   
 }
 
-
-
-
-
-
 @media (min-width: 320px) {
 
     .profile-container {
@@ -244,6 +239,14 @@ a {
     
     .profil-main-container .profile-container {
       text-align: center;
+    }
+
+    #readMore-container  {
+        color: var(--bitcoin-orange);
+    }
+
+    #readLess-container {
+        color: var(--bitcoin-orange);
     }
 
   

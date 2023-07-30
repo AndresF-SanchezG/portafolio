@@ -8,7 +8,20 @@ let divReadLess = null;
          
 function toggleDivContainerText2() {
     if (window.innerWidth <= 900) {
-    divContainerText2.style.display = 'none';
+        divContainerText2.style.display = 'none';
+        createReadMore()
+      
+      
+    }
+    
+    if(window.innerWidth >= 901) {
+        divContainerText2.style.display = 'block';
+        divReadMore = null;
+        divReadLess = null;  
+    }      
+}
+
+function createReadMore() {
 
     if(!divReadMore) {
         divReadMore = document.createElement("div");
@@ -17,63 +30,27 @@ function toggleDivContainerText2() {
         divReadMore.appendChild(wordReadMore);
         divContainerText1.appendChild(divReadMore); 
         wordReadMore.setAttribute('id', 'readMore-container');
-        
+  
+        if(window.innerWidth >= 901) {
+            if(wordReadMore) {
+                wordReadMore.remove();
+                wordReadMore = null;
+            }
+        }    
+    
         wordReadMore.addEventListener('click', ()=> {
             divContainerText2.style.display = 'block';
+            if(divReadMore) {
+                divReadMore.remove();
+                divReadMore = null;
+            }
             createReadLess()
-            divReadMore.remove();
+            
         })
-
-     
-
-        
-
-    } 
-}
-    
-    if(window.innerWidth >= 901) {
-        divContainerText2.style.display = 'block';
-        
-        
-        
-     
-        if(divReadMore) {
-            divReadMore.remove();
-            divReadMore = null;
-        }
-
-
-      
-        
-       
-        }
 
     }
 
-
-
-
-//     wordReadMore.addEventListener('click', ()=> {
-//     divContainerText2.style.display = 'block';
-//     divReadMore.remove(); 
-//     if(divReadMore) {
-//         divReadMore.remove();
-//         divReadMore = null;
-
-//     }       
-//     })
-    
-//     } else {
-//     divContainerText2.style.display = 'block';
-//     divReadMore.remove();
-//     divReadMore = null; 
-//     wordReadLess.remove();
-//     wordReadLess = null;
- 
-//   }
-  
-
-
+}
 
 function createReadLess() {
     let divReadLess = document.createElement('div');
@@ -85,15 +62,12 @@ function createReadLess() {
 
     wordReadLess.addEventListener('click', ()=>{
         divContainerText2.style.display = 'none';
-
-        
         if(divReadLess) {
             divReadLess.remove();
             divReadLess = null;
-            wordReadLess = null;
         }
+        createReadMore();  
     })
- 
 }
 
 document.addEventListener('DOMContentLoaded', function () {
