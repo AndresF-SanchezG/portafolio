@@ -5,22 +5,28 @@ let readMore = document.getElementById('readMore-container');
 let readLess = document.getElementById('readLess-container')
 let divReadMore = null;
 let divReadLess = null;
+let wordReadLess;
+
+createReadMore(); 
+  
          
 function toggleDivContainerText2() {
-   
+    
   
     if (window.innerWidth <= 900) {
         divContainerText2.style.display = 'none';
-        createReadMore();   
-    }
-    
-    if(window.innerWidth >= 901) {
+        divReadMore.style.display = 'block';
+       
+          
+    } else {
         divContainerText2.style.display = 'block';
+        divReadMore.style.display = 'none';
+      
     }      
 }
 
 function createReadMore() {
-
+    
     if(!divReadMore) {
         divReadMore = document.createElement("div");
         let wordReadMore = document.createElement('p');
@@ -45,19 +51,19 @@ function createReadLess() {
     divContainerText2.appendChild(divReadLess);
     wordReadLess.setAttribute('id', 'readLess-container');
 
+
     wordReadLess.addEventListener('click', ()=>{
         divContainerText2.style.display = 'none';
-        divReadMore.style.display = 'block'
-        if(divReadLess) {
-            divReadLess.remove();
-            divReadLess = null;
-        }
+        divReadMore.style.display = 'block';
+        divReadLess.style.display = 'none';
+       
          
     })
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   toggleDivContainerText2();
+  
 });
 
 
