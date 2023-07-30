@@ -41,7 +41,12 @@ function createReadMore() {
             createReadLess(); 
         })
     }
+
+    if (divReadLess) {
+        divReadLess.remove();
+    }
 }
+
 
 function createReadLess() {
     let divReadLess = document.createElement('div');
