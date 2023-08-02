@@ -14,9 +14,9 @@
 
     .div-aboutme-conteiner {
         position: relative;
-        width:230px;
+        width:190px;
         height:60px;
-        font-size: 35px;
+        font-size: 28px;
         font-weight: bold;
         box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
         color: var(--bitcoin-orange);
@@ -31,9 +31,9 @@
 
     .div-projects-conteiner {
         position: absolute;
-        width:230px;
+        width:190px;
         height:60px;
-        font-size: 35px;
+        font-size: 28px;
         font-weight: bold;
         box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
         color: var(--bitcoin-orange);
@@ -150,11 +150,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 25px;
+        margin-top:10px;
     }
 
     .div-text-container {
         width:360px
+    }
+
+    
+    .div-text-container-2 {
+        margin-top: 0;
     }
 
     .profil-main-container img {
