@@ -25,7 +25,7 @@ body {
     width: 100%;
     height: auto;
     font-family: 'Roboto Slab', serif;
-    position: relative;
+    
 }
 
 header {
@@ -74,12 +74,13 @@ a {
 
 .header-div-container {
     width:100%;
-    height:200px;
+    height:110px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color:white ;
+    background-color:white;
+    margin-top:30px
     
 }
 
@@ -97,15 +98,12 @@ a {
     /*min-width: 320px;*/
     padding: 40px 40px;
     background-color: #282623;
-    
- 
-    
 }
 
 main {
     width:100%;
     height:auto;
-    position: relative;
+   
 }
 
 .profil-main-container img {
@@ -115,21 +113,18 @@ main {
     
 }
 
-.profil-main-container .profile-container {
+.profile-container {
    
     color: white;
     justify-content: center;
     font-size: 30px;
     line-height: 35px;
+    margin-top: 25px;
+   
     
 }
 
-.profil-main-container h2 {
-  
-    color:var(--bitcoin-orange);
-    font-size: 25px;
-    
-}
+
 
 .profil-main-container p {
     margin-bottom: 15px;
@@ -143,38 +138,7 @@ main {
 
 .div-text-container-1 {
     margin-bottom: 0px;
-}
-
-.div-aboutme-conteiner {
-    position:absolute;
-    display: flex;
-    width: 190px;
-    height: 60px;
-    background-color: #FAF8F7;
-    font-size: 1px;
-    font-weight: bold; 
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    text-align: center;
-    align-items: center;
-    left: calc(50% - 102px);  
-    justify-content: center;
-    top:-30px;   
-}
-
-.main-button  {
-    display: flex;
-    position: relative;
-    width:210px;
-    height: 60px;
-    font-size: 28px;
-    font-weight: bold;
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-    left: calc(50% - 102px);
-    justify-content: center;
-    align-items: center;
-    color:var(--bitcoin-orange);
-    background-color: #FAF8F7;
-    bottom: 32px;
+    margin-right: 50px;
 }
 
 .proyects-section {
@@ -182,30 +146,46 @@ main {
     flex-direction: column;
     width: 100%;
     height: auto;
+    position: relative;
+   
    
 }
 
 .title-section {
+    display: flex;
     width: auto;
+    height: auto;
+   
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 15px;
+    margin-top: 70px;
     font-size: 28px;
 
   
 }
 
-.sectionFrontend {
+.sectionFrontend  {
     width:100%;
     height:400px;
     display: flex;
     position:relative;
-  
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin: 40px 20px 0 0px; 
+}
+
+.sectionJavascript  {
+    width:100%;
+    height:400px;
+    display: flex;
+    position:relative;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
     margin: 40px 20px 0 0px;
+ 
     
 }
 
@@ -216,8 +196,8 @@ main {
 
 
 .card-container {
-    width:330px;
-    height:350px;
+    width:320px;
+    height:auto;
     border: #201E1C;
     justify-content: center;
     align-items: center;
@@ -228,9 +208,8 @@ main {
     border-radius: 15px;
     margin-right: 20px;
     border: 2px solid rgba(247, 147, 26, 0.4);
-    padding:0 10px 0 10px
-  
-    
+    padding:0 10px 0 10px;
+
 }
 
 .card-container h3 {
@@ -240,24 +219,25 @@ main {
 }
 
 .img-frontend-container {
-    width:100%;
-   
-    
+    width:auto;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+    margin-bottom: 15px;  
 }
 
 img {
     width:300px;
-    height:200px;
+    height:250px;
     overflow: hidden;
-    object-fit: cover;
-    
-   
+    object-fit: contain; 
 }
 
 .actions-cards {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 .actions-cards a {
@@ -268,6 +248,16 @@ img {
     color: var(--just-white);
     border-radius: 5px;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
