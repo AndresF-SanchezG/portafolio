@@ -1,5 +1,6 @@
 let responsiveContainer = document.getElementById('responsiveContainer');
 let certificationContainer = document.getElementById('certificationContainer');
+let readLessCertification = document.getElementById('readLessCertification-container');
 
 initialize()
 
@@ -53,7 +54,17 @@ function crearTabla(certifications) {
     responsiveContainer.style.display = 'none'
 }
 
+readLessCertification.style.display='none';
+
 certificationContainer.addEventListener('click', ()=>{
     responsiveContainer.style.display = 'block'
+    readLessCertification.style.display='block';
+ 
     
+})
+
+readLessCertification.addEventListener('click', ()=>{
+  
+    responsiveContainer.style.display = 'none'
+    readLessCertification.style.display='none';
 })
