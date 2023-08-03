@@ -1,0 +1,75 @@
+[
+    {
+        "id":1,
+        "categority": "Responsive-Design",
+        "certifications": [
+            {
+                "name": " Curso de Frontend Developer",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2467-frontend-developer/diploma/detalle/"
+             },
+                {
+                "name": " Curso Práctico de Frontend",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2477-frontend-developer-practico/diploma/detalle/"
+                },
+                {
+                "name": "Curso Definitivo de HTML y CSS",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2008-html-css/diploma/detalle/"
+                },
+                {
+                    "name": "Curso Práctico de HTML y CSS",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1758-html-practico/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Responsive Design: Maquetación Mobile First",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2030-mobile-first/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Diseño para Developers",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1906-diseno-programadores/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Sistemas de Diseño Efectivos",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1420-sistemas-diseno/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de CSS Grid Básico",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2474-css-grid/diploma/detalle/"
+                },
+                {
+                    "name": "Curso Práctico de Maquetación en CSS",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1744-practico-css/diploma/detalle/"
+                },
+                {
+                    "name": "Curso Profesional de CSS Grid Layout",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2222-css-grid-layout/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Diseño Web con CSS Grid y Flexbox",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2229-flexbox-css-grid/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Transform y Transiciones en CSS",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2336-transformaciones-transiciones-css/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Animaciones con CSS",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2337-animaciones-css/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Tailwind CSS",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2702-tailwind/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Creación de Páginas Web con ChatGPT",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/7758-web-chatgpt/diploma/detalle/"
+                },
+              
+                {
+                    "name": "Responsive Web Design",
+                    "url": "https://www.freecodecamp.org/certification/andresSanchez/responsive-web-design"
+                }
+             
+        ]
+
+    }
+]
