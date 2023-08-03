@@ -74,18 +74,22 @@ a {
 
 .header-div-container {
     width:100%;
-    height:110px;
+    height:auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color:white;
-    margin-top:30px
+    margin-bottom: -30px;
+    margin-top: 30px;
+ 
     
 }
 
+
+
 .header-div-container h1 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .header-div-container h3 {
@@ -120,7 +124,7 @@ main {
     justify-content: center;
     font-size: 30px;
     line-height: 35px;
-    margin-top:0px;
+    margin-top:-16px;
    
     
 }
@@ -148,7 +152,7 @@ main {
     width: 100%;
     height: auto;
     position: relative;
-    margin-bottom: 70px;
+    
    
    
 }
@@ -161,8 +165,21 @@ main {
     justify-items: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 45px;
+    margin-top: 50px;
     font-size: 28px;
+    margin-bottom: -15px;
+}
+
+.title-section2 {
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
 .sectionFrontend  {
@@ -184,11 +201,23 @@ main {
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
-    margin: 40px 20px 0 0px;
-    
- 
-    
+    margin: 0px 20px 0 0px;
+     
 }
+
+.sectionBackend {
+    width:100%;
+    height:400px;
+    display: flex;
+    position:relative;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    margin-bottom: 70px;
+
+}
+
+
 
 .frontend-container {
     margin-left: 20px;
@@ -382,7 +411,7 @@ table {
     text-align: center;
 }
 
-a {
+.ancle-certification {
     margin-right: 50px;
 }
 

@@ -47,6 +47,7 @@ function crearTabla(certifications) {
         let ancle = document.createElement('a');
         ancle.textContent = 'Certification';
         ancle.setAttribute('href', certifications[0].certifications[i].url);
+        ancle.setAttribute('class', 'ancle-certification');
         td2.appendChild(ancle);
 
     }
