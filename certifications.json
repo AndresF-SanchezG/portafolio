@@ -77,6 +77,10 @@
         "categority": "javascript",
         "certifications": [
             {
+                "name": "JavaScript Algorithms and Data Structures",
+                "url": "https://www.freecodecamp.org/certification/andresSanchez/javascript-algorithms-and-data-structures"
+             },
+            {
                 "name": " Curso Básico de JavaScript",
                 "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1814-basico-javascript/diploma/detalle/"
              },
@@ -116,6 +120,23 @@
                     "name": "Curso de Manipulación del DOM",
                     "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2193-dom/diploma/detalle/"
                 }
+             
+        ]
+
+    },
+    {
+        "id":3,
+        "categority": "libraries",
+        "certifications": [
+            {
+                "name": "Curso de Frameworks y Librerías de JavaScript",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2239-frameworks-javascript/diploma/detalle/"
+             },
+                {
+                "name": "Front End Development Libraries",
+                "url": "https://www.freecodecamp.org/certification/andresSanchez/front-end-development-libraries"
+                }
+                
              
         ]
 
