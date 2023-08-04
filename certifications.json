@@ -71,5 +71,53 @@
              
         ]
 
+    },
+    {
+        "id":2,
+        "categority": "javascript",
+        "certifications": [
+            {
+                "name": " Curso Básico de JavaScript",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1814-basico-javascript/diploma/detalle/"
+             },
+                {
+                "name": "Curso Práctico de JavaScript",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/3271-javascript-practico/diploma/detalle/"
+                },
+                {
+                "name": " Closures y Scope en JavaScript",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/3213-javascript-closures-scope/diploma/detalle/"
+                },
+                {
+                    "name": "Curso Básico de Programación Orientada a Objetos con JavaScript",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2332-javascript-poo/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de JavaScript Engine (V8) y el Navegador",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1798-javascript-navegador/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Asincronismo con JavaScript",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/3175-asincronismo-js/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de API REST con Javascript: Fundamentos",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2985-api/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de API REST con Javascript: Ejemplos con APIs reales",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2986-api-practico/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de API REST con Javascript: Performance y Usabilida",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2942-api-profesional/diploma/detalle/"
+                },
+                {
+                    "name": "Curso de Manipulación del DOM",
+                    "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2193-dom/diploma/detalle/"
+                }
+             
+        ]
+
     }
 ]
