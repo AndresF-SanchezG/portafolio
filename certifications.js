@@ -9,7 +9,7 @@ let readLessCertification = document.getElementById('readLessCertification-conta
 let readLessCertificationJS = document.getElementById('readLessCertificationJs-container');
 let readLessCertificationRT = document.getElementById('readLessCertificationRT-container');
 
-javaScriptContainer
+
 
 initialize()
 
@@ -116,7 +116,7 @@ function crearTablaLibraries(certifications) {
     // console.log(propiedades)
     let tableRT = document.createElement('table');
     librariesContainer.appendChild(tableRT); 
-    let certificationsCount = certifications[1].certifications.length;
+    let certificationsCount = certifications[2].certifications.length;
     console.log(certificationsCount);
     
 
