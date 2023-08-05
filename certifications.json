@@ -113,7 +113,7 @@
                     "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2986-api-practico/diploma/detalle/"
                 },
                 {
-                    "name": "Curso de API REST con Javascript: Performance y Usabilida",
+                    "name": "Curso de API REST con Javascript: Performance y Usabilidad",
                     "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2942-api-profesional/diploma/detalle/"
                 },
                 {
@@ -138,6 +138,55 @@
                 }
                 
              
+        ]
+
+    },
+    {
+        "id":4,
+        "categority": "database",
+        "certifications": [
+            {
+                "name": "Curso de Fundamentos de Bases de Datos",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1566-bd/diploma/detalle/"
+             },
+            {
+                "name": "Curso Práctico de SQL y MySQL",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1272-sql-mysql/diploma/detalle/"
+            },
+            {
+                "name": "Curso de PostgreSQL",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/1480-postgresql/diploma/detalle/"
+            },
+            {
+                "name": "Curso Práctico de SQL",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2059-practico-sql/diploma/detalle/"
+            },
+            {
+                "name": "Relational Database",
+                "url": "https://www.freecodecamp.org/learn/relational-database/"
+            }
+                
+             
+        ]
+
+    },
+    {
+        "id":5,
+        "categority": "backend",
+        "certifications": [
+            {
+                "name": "Curso de Backend con Node.js: API REST con Express.js",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2485-backend-nodejs/diploma/detalle/"
+             },
+            {
+                "name": "Curso de Backend con Node.js: Base de Datos con PostgreSQL",
+                "url": "https://platzi.com/p/andresfernandosanchezgalarza/curso/2507-backend-nodejs-postgres/diploma/detalle/"
+            },
+            {
+                "name": "Back End Development and APIs",
+                "url": "https://www.freecodecamp.org/learn/back-end-development-and-apis/"
+            }
+                 
         ]
 
     }
