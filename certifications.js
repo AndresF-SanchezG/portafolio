@@ -250,6 +250,10 @@ readLessCertificationRT.addEventListener('click', () => {
     toggleVisibility(librariesContainer, readLessCertificationRT); 
 });
 
+readLessCertificationDB.addEventListener('click', () => {
+    toggleVisibility(BKContainer, readLessCertificationDB); 
+});
+
 readLessCertificationBK.addEventListener('click', () => {
     toggleVisibility(BKContainer, readLessCertificationBK); 
 });
