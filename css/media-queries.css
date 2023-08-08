@@ -97,9 +97,15 @@
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 350px) {
     .nav-right-section {
         font-size: 13px;
+    }
+}
+
+@media (max-width: 415px) {
+    .nav-right-section {
+        font-size: 16px;
     }
 }
 
