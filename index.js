@@ -59,12 +59,15 @@ function createReadMore() {
     
 }
 
-function clickReadMore(event) {
-    divReadMore.addEventListener('click', ()=> {
-        event.preventDefault();
+function clickReadMore() {
+ 
+    divReadMore.addEventListener('click', (evt)=> {
+        evt.preventDefault();
         divContainerText2.style.display = 'block';
         divReadMore.style.display = 'none';
     })
+
+    
 
 }
 
