@@ -50,6 +50,7 @@ function createReadMore() {
         divReadMore.appendChild(wordReadMore);
         divContainerText1.appendChild(divReadMore); 
         wordReadMore.setAttribute('id', 'readMore-container');
+        divReadMore.setAttribute('class', 'div-readMore-container')
         clickReadMore();
         createReadLess();
         
