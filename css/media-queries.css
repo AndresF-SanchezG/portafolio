@@ -128,53 +128,21 @@
     .proyects-section {
      
       display: flex;
-      flex-direction: column;
+    
       align-items: center; 
       justify-content: center; 
     }
 
   
   
-    .sectionFrontend  {
-      display: grid;
-      width: 690px; 
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin: 40px 20px 0 0px;
-      overflow-y: hidden;
-      height: auto;
-      justify-items: center; 
-      align-items: center; 
-      overflow-x: hidden; 
-    }
+ 
 
-    .sectionJavascript {
-        display: grid;
-      width: 690px; 
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
-      margin: 0px 20px 0 0px;
-      overflow-y: hidden;
-      height: auto;
-      justify-items: center; 
-      align-items: center; 
-      overflow-x: hidden;
 
-    }
 
-    .sectionBackend {
-        width:100%;
-        height:400px;
-        display: flex;
-        position:relative;
-        overflow-x: scroll;
-        overscroll-behavior-x: contain;
-        scroll-snap-type: x proximity;
-        margin-bottom: 70px;
-    
-    }
   
     .card-container {
+        display:flex;
+        flex-direction: column;
       justify-items: center;
       align-items: center;
       margin: 0 auto;
@@ -309,53 +277,19 @@
 
    
     .sectionFrontend  {
-      display: grid;
-      width:80%;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
-      margin: 40px 20px 0 0px;
-      overflow-y: hidden;
+      width:100%;
+   display:flex;
+    
+      
+   
       height: auto;
       justify-items: center;
       align-items: center;
-      overflow-x: hidden;
+   
     }
   
-    .card-container {
-      margin: 0;
-    }
 
-    .sectionJavascript {
-        width:100px;
-    }
-
-    .sectionJavascript  {
-        display: grid;
-        width:80%;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin: 0px 20px 0 0px;
-        overflow-y: hidden;
-        height: auto;
-        justify-items: center;
-        align-items: center;
-        overflow-x: hidden;
-      }
-
-      .sectionBackend {
-        display: grid;
-        width:80%;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin: 0px 20px 0 0px;
-        overflow-y: hidden;
-        height: auto;
-        justify-items: center;
-        align-items: center;
-        overflow-x: hidden;
-        margin-bottom: 70px;
-        
-      }
+  
 
    
   
